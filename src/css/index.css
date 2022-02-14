@@ -29,6 +29,26 @@
   }
 
   .button-border {
-    @apply flex justify-center py-4 px-8 ring-[1.5px] ring-blue rounded-[.8rem] text-[15px] text-blue font-medium transition-all duration-500 hover:text-white hover:bg-[#1bb5b8] hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)];
+    @apply flex justify-center py-4 px-8 ring-[1.5px] ring-inset ring-blue rounded-[.8rem] text-[15px] text-blue font-medium transition-all duration-500 hover:text-white hover:bg-[#1bb5b8] hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)];
   }
+}
+
+/* ===== Header Section ===== */
+@media screen and (max-width: 768px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-[#fafafa] rounded-[1.5rem] shadow-[0_0_8px_rgba(0,0,0,0.1)] opacity-0 scale-y-0 origin-[0%_0%] transition-all duration-500;
+  }
+}
+.header__link {
+  @apply text-[15px] text-darkGrey;
+}
+.header__link.active-link {
+  @apply relative font-semibold text-black;
+}
+.header__link.active-link::before {
+  @apply absolute content-[""] top-6 left-0 right-0 mx-auto w-[15px] h-[3px] bg-black rounded-[5rem];
+}
+/* Show Header Menu */
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
 }

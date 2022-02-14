@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,8 +16,58 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
     />
   </head>
-  <body class="font-body">
-    <a href="#" class="button-link">Button</a>
+  <body class="font-body font-normal">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-500"
+      id="header"
+    >
+      <div
+        class="header__container container px-6 h-[6rem] flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-1 text-[20px] text-black font-bold italic"
+        >
+          <img
+            src="./src/img/icon.png"
+            alt=""
+            class="header__logo-icon w-[35px]"
+          />
+          Bensik.
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-8">
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__button button-border mt-8">Register</a>
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
 
     <!-- ===== MAIN JS ===== -->
     <script type="module" src="./src/js/main.js"></script>
