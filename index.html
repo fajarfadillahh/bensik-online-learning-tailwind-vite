@@ -75,10 +75,10 @@
 
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
-      <section class="home pt-32 pb-20" id="home">
-        <div class="home__container container px-6 grid gap-12">
+      <section class="home pt-32 pb-20 lg:pt-40" id="home">
+        <div class="home__container container px-6 grid gap-12 lg:grid-cols-2">
           <div
-            class="home__data text-center xs:w-[400px] xs:mx-auto sm:w-[420px]"
+            class="home__data text-center xs:w-[400px] xs:mx-auto sm:w-[420px] lg:w-full lg:text-left lg:self-center"
           >
             <span
               class="home__subtitle inline-flex text-[15px] text-blue font-semibold py-2 px-4 bg-[#1ebfc1] bg-opacity-[0.08] rounded-[5rem] mb-3"
@@ -90,7 +90,9 @@
               Words learner <br />
               come here.
             </h1>
-            <p class="home__text text-[15px] text-grey leading-text mb-8">
+            <p
+              class="home__text text-[15px] text-grey leading-text mb-8 lg:w-[380px]"
+            >
               Build skills with courses, certificates, and get online knowledge
               from our world-class platform.
             </p>
@@ -113,9 +115,9 @@
 
       <!-- ===== FEATURES SECTION ===== -->
       <section class="features section">
-        <div class="features__container container px-6 grid gap-12">
+        <div class="features__container container px-6 grid gap-12 lg:gap-20">
           <div
-            class="features__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px]"
+            class="features__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px] lg:w-[470px]"
           >
             <span class="features__subtitle section-subtitle">Features</span>
             <h1 class="features__title section-title mb-3">
@@ -197,9 +199,9 @@
 
       <!-- ===== COURSES SECTION ===== -->
       <section class="courses section">
-        <div class="courses__container container px-6 grid gap-12">
+        <div class="courses__container container px-6 grid gap-12 lg:gap-20">
           <div
-            class="courses__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px]"
+            class="courses__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px] lg:w-[470px]"
           >
             <span class="courses__subtitle section-subtitle">Courses</span>
             <h1 class="courses__title section-title mb-3">Popular Courses</h1>
@@ -407,17 +409,23 @@
 
       <!-- ===== HANDBOOK SECTION ===== -->
       <section class="handbook section">
-        <div class="handbook__container container px-6 grid gap-12">
+        <div
+          class="handbook__container container px-6 grid gap-12 lg:grid-cols-2"
+        >
           <div
-            class="handbook__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px]"
+            class="handbook__data text-center xs:w-[380px] xs:mx-auto sm:w-[420px] lg:w-full lg:text-left lg:self-center"
           >
-            <span class="handbook__subtitle section-subtitle"
+            <span class="handbook__subtitle section-subtitle lg:text-left"
               >Get your dream job</span
             >
-            <h1 class="handbook__title section-title mb-3">
+            <h1
+              class="handbook__title section-title mb-3 lg:text-left lg:text-[42px]"
+            >
               Still Confused To Start From where? Study the Handbook
             </h1>
-            <p class="handbook__text text-[15px] text-grey leading-text mb-8">
+            <p
+              class="handbook__text text-[15px] text-grey leading-text mb-8 lg:w-[380px]"
+            >
               We provide Handbook as the ultimate guide for you to know the
               various professions available in the field of design and
               technology.
@@ -443,7 +451,9 @@
         <div
           class="newsletter__container container px-6 grid gap-8 text-center"
         >
-          <div class="newsletter__data xs:w-[380px] xs:mx-auto sm:w-[420px]">
+          <div
+            class="newsletter__data xs:w-[380px] xs:mx-auto sm:w-[420px] lg:w-[470px]"
+          >
             <h1
               class="newsletter__title section-title text-white font-bold mb-3"
             >
@@ -457,7 +467,7 @@
 
           <form
             action=""
-            class="newsletter__direction flex flex-col gap-y-4 xs:w-[380px] xs:mx-auto sm:w-[420px] sm:flex-row sm:justify-between sm:bg-white sm:p-2 sm:rounded-[1rem]"
+            class="newsletter__direction flex flex-col gap-y-4 xs:w-[380px] xs:mx-auto sm:w-[420px] sm:flex-row sm:justify-between sm:bg-white sm:p-2 sm:rounded-[1rem] lg:w-[470px]"
           >
             <input
               type="text"
@@ -499,7 +509,7 @@
             </p>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3 class="footer__title text-[20px] text-black font-bold mb-4">
               Product
             </h3>
@@ -536,7 +546,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3 class="footer__title text-[20px] text-black font-bold mb-4">
               Commnity
             </h3>
@@ -573,7 +583,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item lg:justify-self-center">
             <h3 class="footer__title text-[20px] text-black font-bold mb-4">
               Company
             </h3>

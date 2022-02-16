@@ -17,7 +17,7 @@
   }
 
   .section-title {
-    @apply text-center text-[24px] text-black font-bold  xs:text-[28px];
+    @apply text-center text-[24px] text-black font-bold  xs:text-[28px] lg:text-[32px];
   }
 
   .button-link {
